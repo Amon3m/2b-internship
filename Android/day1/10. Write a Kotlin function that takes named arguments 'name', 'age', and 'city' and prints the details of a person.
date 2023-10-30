@@ -1,0 +1,6 @@
+fun printPersonDetails(name: String, age: Int, city: String) {
+    println("Name: $name \nAge: $age\nCity: $city")
+}
+fun main() {
+    printPersonDetails( "Ahmed", 25,  "Cairo")
+}
