@@ -1,0 +1,15 @@
+fun sumOfDigits(num: Int): Int {
+    if (num < 10) {
+        return num
+    } else {
+        val lastDigit = num % 10
+        val digits = num / 10
+        val sum = lastDigit + sumOfDigits(digits)
+        return sum
+    }
+}
+
+fun main() {
+  val sum = sumOfDigits(123456)
+    println("The sum of the digits = $sum")
+}
