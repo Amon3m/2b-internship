@@ -1,0 +1,9 @@
+fun reverse(str: String): String {
+    return str.reversed()
+}
+
+fun main() {
+    val str = "kotlin"
+    val reversedString = reverse(str)
+    println("Reversed string = $reversedString")
+}
