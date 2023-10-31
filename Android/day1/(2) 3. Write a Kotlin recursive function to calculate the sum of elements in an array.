@@ -1,0 +1,15 @@
+fun sumArrayElements(arr: IntArray, index: Int = 0): Int {
+    if (index == arr.size) {
+        return 0
+    } else {
+        val currentElement = arr[index]
+        val sum = sumArrayElements(arr, index + 1)
+        return currentElement + sum
+    }
+}
+
+fun main() {
+    val arr = intArrayOf(1, 2, 3, 4)
+    val result = sumArrayElements(arr)
+    println("The sum of array is = $result")
+}
